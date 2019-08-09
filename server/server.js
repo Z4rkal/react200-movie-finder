@@ -64,6 +64,9 @@ app.post('/api/search', (req, res) => {
                             })
                             .catch(error => console.log(error));
                     }
+                    else {
+                        res.status(404).send(`The search didn't get any results :(`);
+                    }
                 })
                 .catch(error => {
                     res.status(500).send(`Couldn't get data from OMDB: ${error}`);

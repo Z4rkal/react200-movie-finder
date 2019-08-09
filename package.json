@@ -60,6 +60,7 @@
     "mocha": "^6.2.0",
     "sinon": "^7.4.1",
     "sinon-chai": "^3.3.0",
+    "supertest": "^4.0.2",
     "url-loader": "^2.1.0"
   }
 }

@@ -15,7 +15,6 @@ app.listen(8888);
 
 const url = 'http://localhost:8888';
 
-
 describe('express', () => {
   beforeEach(() => {
     nightmare = new Nightmare();
@@ -30,7 +29,4 @@ describe('express', () => {
         expect(text).to.contain('Movie Finder');
       })
   );
-
-  it('returns the correct status code', () => axios.get(url)
-    .then(response => expect(response.status === 200)));
 });
