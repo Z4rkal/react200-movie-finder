@@ -3,7 +3,8 @@ import { connect } from'react-redux';
 
 function mapStoreToProps(store) {
     return {
-        searchInput: store.header.searchInput
+        searchInput: store.header.searchInput,
+        redirectPath: store.header.redirectPath
     };
 }
 

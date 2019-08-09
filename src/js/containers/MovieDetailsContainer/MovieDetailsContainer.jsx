@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Header from '../components/Header';
+import Header from '../../components/Header';
+import MovieDetails from '../../components/MovieDetails';
 
-class MovieSearchContainer extends Component {
+class MovieDetailContainer extends Component {
     constructor(props) {
         super(props);
     }
@@ -10,14 +11,14 @@ class MovieSearchContainer extends Component {
         return (
             <React.Fragment>
                 <div className='container-fluid'>
-                    <Header />
+                    <Header isSearch={false} />
                 </div>
                 <div className='container'>
-
+                    <MovieDetails path={this.props.location.pathname} />
                 </div>
             </React.Fragment>
         )
     }
 }
 
-export default MovieSearchContainer;
+export default MovieDetailContainer;

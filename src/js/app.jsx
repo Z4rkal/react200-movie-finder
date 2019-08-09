@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
-import MovieSearchContainer from './containers/MovieSearchContainer';
-import MovieDetailContainer from './containers/MovieDetailContainer';
+import MovieSearchContainer from './containers/MovieSearchContainer/';
+import MovieDetailsContainer from './containers/MovieDetailsContainer/';
 
 class App extends Component {
   render() {
@@ -10,7 +10,7 @@ class App extends Component {
       <React.Fragment>
         <Router>
             <Route exact path='/' component={MovieSearchContainer} />
-            <Route path='/movie/:id' component={MovieDetailContainer} />
+            <Route path='/movie/:id' component={MovieDetailsContainer} />
         </Router>
       </React.Fragment>
     )
