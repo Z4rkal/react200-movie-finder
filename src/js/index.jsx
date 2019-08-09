@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { createPromise } from 'redux-promise-middleware';
 import reducers from './reducers';
-import App from './App.jsx';
+import App from './app';
 
 const promise = createPromise({ types: { fulfilled: 'success' } });
 
